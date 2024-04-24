@@ -1,0 +1,6 @@
+@OrphanedEntities_HostAddress = http://localhost:5031
+
+GET {{OrphanedEntities_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
