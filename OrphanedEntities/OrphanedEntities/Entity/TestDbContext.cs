@@ -26,7 +26,7 @@ namespace OrphanedEntities.Entity
                 .WithMany(c => c.CompanyProperties)
                 .HasForeignKey(c => c.CompanyId)
                 .IsRequired(false)
-                .OnDelete(DeleteBehavior.NoAction);
+                .OnDelete(DeleteBehavior.Cascade);
 
     
             modelBuilder.Entity<CompanyEntity>().HasData(
